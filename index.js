@@ -61,6 +61,6 @@ async function revisarPartidos() {
 }
 
 // Revisar cada minuto
-setInterval(revisarPartidos, 60 * 1000);
+setInterval(revisarPartidos, 60 * 60 * 1000);
 
 console.log("⏳ Bot iniciado, esperando el momento de publicar...");
