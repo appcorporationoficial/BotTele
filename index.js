@@ -1,8 +1,8 @@
 import fetch from "node-fetch";
 import TelegramBot from "node-telegram-bot-api";
 
-const TOKEN = "8121001473:AAHr1BaTJexGSMjACSiycPzeZi698FmzYNA";
-const CHAT_ID = "-1003042372516";
+const TOKEN = process.env.BOT_TOKEN;
+const CHAT_ID = process.env.CHAT_ID; 
 
 const bot = new TelegramBot(TOKEN, { polling: false });
 
